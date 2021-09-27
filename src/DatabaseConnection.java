@@ -8,7 +8,7 @@ public class DatabaseConnection {
 		
 	    private final String url = "jdbc:postgresql://localhost/dbconn";
 	    private final String user = "postgres";
-	    private final String password = "29800";
+	    private final String password = "postgres";
 
 	    public Connection connect() {
 	        Connection conn = null;
@@ -16,9 +16,9 @@ public class DatabaseConnection {
 	            conn = DriverManager.getConnection(url, user, password);
 
 	          /*  if (conn != null) {
-	                System.out.println("PostgreSQL servera başarılı bir şekilde bağlanıldı.");
+	                System.out.println("PostgreSQL servera baÃ¾arÃ½lÃ½ bir Ã¾ekilde baÃ°lanÃ½ldÃ½.");
 	            } else {
-	                System.out.println("Bağlantı Hatası!");
+	                System.out.println("BaÃ°lantÃ½ HatasÃ½!");
 	            }*/
 
 	        } catch (SQLException e) {
